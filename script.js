@@ -50,3 +50,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// Dynamic Year Update for Footer
+document.addEventListener('DOMContentLoaded', () => {
+    const yearSpan = document.querySelector('footer p');
+    if (yearSpan) {
+        const currentYear = new Date().getFullYear();
+        // Updates the text to "© [Current Year] Onyeriri. All Rights Reserved."
+        yearSpan.innerHTML = `&copy; ${currentYear} Onyeriri. All Rights Reserved.`;
+    }
+});
