@@ -3,231 +3,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | IT Professional & Engineer</title>
+    <title>Onyeriri | IT Security & Project Management Professional</title>
+    <meta name="description" content="Portfolio of Onyeriri - CompTIA Certified IT Specialist and MSc Project Manager.">
+
+    <!-- Fonts: Inter for UI, Poppins for Headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">Portfolio</a>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#certifications" class="nav-link">Certifications</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Hello, I'm <span class="highlight">Your Name</span></h1>
-            <p class="hero-subtitle">IT Professional | Network Engineer | Project Manager</p>
-            <p class="hero-description">Bridging the gap between technology and agriculture with expertise in network security, infrastructure, and project management.</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                <a href="#certifications" class="btn btn-secondary">View Certifications</a>
-            </div>
-        </div>
-        <div class="hero-shape"></div>
-    </section>
+<!-- Dynamic Background -->
+<div class="bg-animation">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="grid-overlay"></div>
+</div>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I am a multifaceted professional with a unique blend of technical IT expertise and engineering knowledge. My journey spans from Agricultural Engineering to advanced IT certifications, complemented by a Master's in Project Management.</p>
-                    <p>With CompTIA A+, Network+, and Security+ certifications, I possess a strong foundation in IT infrastructure and cybersecurity. Currently pursuing CCNA and Red Hat EX200 certifications to further enhance my technical capabilities.</p>
-                    <p>My diverse background enables me to approach problems from multiple perspectives, combining technical acumen with project management excellence to deliver optimal solutions.</p>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="container nav-container">
+        <a href="#" class="logo">Onyeriri<span class="dot">.</span></a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact" class="btn-nav">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container hero-content">
+        <div class="hero-text hidden-left">
+            <div class="badge-pill">Available for Opportunities</div>
+            <h1>Bridging <span class="gradient-text">Engineering</span> & <span class="gradient-text">Cybersecurity</span></h1>
+            <p class="hero-desc">
+                I am an IT Specialist and Project Manager with a unique multidisciplinary background.
+                Combining <strong>CompTIA Security+ & Network+</strong> expertise with an <strong>MSc in Project Management</strong> to deliver secure, efficient, and scalable technical solutions.
+            </p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary">
+                    <span>Let's Connect</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#certifications" class="btn btn-outline">View Credentials</a>
+            </div>
+
+            <div class="stats-row">
+                <div class="stat-item">
+                    <h3>5+</h3>
+                    <span>Certifications</span>
                 </div>
-                <div class="about-skills">
-                    <div class="skill-card">
-                        <i class="fas fa-network-wired"></i>
-                        <h3>Network Administration</h3>
-                        <p>Cisco, Routing & Switching, Network Security</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-shield-alt"></i>
-                        <h3>Cybersecurity</h3>
-                        <p>Security+, Risk Assessment, Threat Analysis</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-project-diagram"></i>
-                        <h3>Project Management</h3>
-                        <p>Agile, Stakeholder Management, Planning</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-server"></i>
-                        <h3>System Administration</h3>
-                        <p>Linux, Windows Server, Hardware Support</p>
-                    </div>
+                <div class="stat-item">
+                    <h3>MSc</h3>
+                    <span>Project Mgmt</span>
+                </div>
+                <div class="stat-item">
+                    <h3>BSc</h3>
+                    <span>Eng. Tech</span>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications" class="certifications">
-        <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <div class="cert-grid">
-                <div class="cert-card achieved">
-                    <div class="cert-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3>CompTIA A+</h3>
-                    <p class="cert-status">Achieved</p>
-                    <p class="cert-desc">Hardware and software troubleshooting, operating systems, and basic networking</p>
-                    <div class="cert-badge">✓ Verified</div>
+        <div class="hero-visual hidden-right">
+            <div class="glass-card-visual">
+                <div class="code-header">
+                    <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
                 </div>
-                <div class="cert-card achieved">
-                    <div class="cert-icon">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <h3>CompTIA Network+</h3>
-                    <p class="cert-status">Achieved</p>
-                    <p class="cert-desc">Network configuration, management, and troubleshooting expertise</p>
-                    <div class="cert-badge">✓ Verified</div>
-                </div>
-                <div class="cert-card achieved">
-                    <div class="cert-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>CompTIA Security+</h3>
-                    <p class="cert-status">Achieved</p>
-                    <p class="cert-desc">Cybersecurity fundamentals, risk management, and threat analysis</p>
-                    <div class="cert-badge">✓ Verified</div>
-                </div>
-                <div class="cert-card in-progress">
-                    <div class="cert-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>Cisco CCNA</h3>
-                    <p class="cert-status">In Progress</p>
-                    <p class="cert-desc">Advanced routing, switching, and network infrastructure management</p>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 70%"></div>
-                    </div>
-                </div>
-                <div class="cert-card in-progress">
-                    <div class="cert-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3>Red Hat EX200</h3>
-                    <p class="cert-status">In Progress</p>
-                    <p class="cert-desc">Linux system administration and enterprise-level deployment</p>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 60%"></div>
-                    </div>
+                <div class="code-content">
+                    <p><span class="keyword">class</span> <span class="class-name">Professional</span> {</p>
+                    <p class="indent">constructor() {</p>
+                    <p class="indent-double">this.role = <span class="string">"IT Specialist"</span>;</p>
+                    <p class="indent-double">this.focus = [<span class="string">"Security"</span>, <span class="string">"Networks"</span>, <span class="string">"PM"</span>];</p>
+                    <p class="indent-double">this.location = <span class="string">"London/Remote"</span>;</p>
+                    <p class="indent">}</p>
+                    <p class="indent"><span class="function">deploySkills</span>() {</p>
+                    <p class="indent-double"><span class="keyword">return</span> <span class="string">"Secure Infrastructure"</span>;</p>
+                    <p class="indent">}</p>
+                    <p>}</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="edu-timeline">
-                <div class="edu-card">
-                    <div class="edu-year">2020 - 2022</div>
-                    <div class="edu-content">
-                        <h3>Master of Science (MSc) in Project Management</h3>
-                        <h4>University of Northumbria Newcastle - London Campus</h4>
-                        <p>Advanced study in project planning, risk management, agile methodologies, and strategic leadership. Equipped with skills to manage complex technical projects from inception to completion.</p>
-                        <div class="edu-tags">
-                            <span>Project Planning</span>
-                            <span>Risk Management</span>
-                            <span>Agile</span>
-                            <span>Leadership</span>
-                        </div>
-                    </div>
+<!-- Expertise / Skills Section -->
+<section id="expertise" class="section">
+    <div class="container">
+        <div class="section-header hidden-bottom">
+            <h2>Core Competencies</h2>
+            <p>Technical skills validated by industry certifications and academic rigor.</p>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-card hidden-bottom">
+                <div class="skill-icon"><i class="fas fa-shield-halved"></i></div>
+                <h3>Cybersecurity</h3>
+                <p>Risk assessment, vulnerability management, and security baseline implementation (Security+).</p>
+                <div class="progress-track"><div class="progress-fill" style="width: 90%"></div></div>
+            </div>
+            <div class="skill-card hidden-bottom" style="transition-delay: 100ms;">
+                <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+                <h3>Network Infrastructure</h3>
+                <p>TCP/IP, routing, switching, and network troubleshooting (Network+, CCNA Pending).</p>
+                <div class="progress-track"><div class="progress-fill" style="width: 85%"></div></div>
+            </div>
+            <div class="skill-card hidden-bottom" style="transition-delay: 200ms;">
+                <div class="skill-icon"><i class="fas fa-tasks"></i></div>
+                <h3>Project Management</h3>
+                <p>Agile methodologies, risk management, and stakeholder communication (MSc).</p>
+                <div class="progress-track"><div class="progress-fill" style="width: 95%"></div></div>
+            </div>
+            <div class="skill-card hidden-bottom" style="transition-delay: 300ms;">
+                <div class="skill-icon"><i class="fab fa-linux"></i></div>
+                <h3>System Administration</h3>
+                <p>Linux server management, bash scripting, and user administration (RHCSA Pending).</p>
+                <div class="progress-track"><div class="progress-fill" style="width: 75%"></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="section">
+    <div class="container">
+        <div class="section-header hidden-bottom">
+            <h2>Certifications & Credentials</h2>
+            <p>Industry-recognized qualifications demonstrating technical proficiency.</p>
+        </div>
+
+        <div class="cert-grid">
+            <!-- Achieved -->
+            <div class="glass-card cert-card hidden-bottom">
+                <div class="cert-badge"><i class="fas fa-check-circle"></i></div>
+                <div class="cert-logo"><i class="fas fa-shield-alt"></i></div>
+                <h3>CompTIA Security+</h3>
+                <p class="cert-org">CompTIA</p>
+                <p class="cert-desc">Validated baseline skills necessary to perform core security functions and pursue an IT security career.</p>
+                <span class="tag achieved">Verified</span>
+            </div>
+
+            <div class="glass-card cert-card hidden-bottom">
+                <div class="cert-badge"><i class="fas fa-check-circle"></i></div>
+                <div class="cert-logo"><i class="fas fa-network-wired"></i></div>
+                <h3>CompTIA Network+</h3>
+                <p class="cert-org">CompTIA</p>
+                <p class="cert-desc">Essential networking knowledge including configuring, managing, and troubleshooting networks.</p>
+                <span class="tag achieved">Verified</span>
+            </div>
+
+            <div class="glass-card cert-card hidden-bottom">
+                <div class="cert-badge"><i class="fas fa-check-circle"></i></div>
+                <div class="cert-logo"><i class="fas fa-laptop-medical"></i></div>
+                <h3>CompTIA A+</h3>
+                <p class="cert-org">CompTIA</p>
+                <p class="cert-desc">Industry standard for establishing an IT career. Covers hardware, software, and troubleshooting.</p>
+                <span class="tag achieved">Verified</span>
+            </div>
+
+            <!-- In Progress -->
+            <div class="glass-card cert-card in-progress hidden-bottom">
+                <div class="cert-badge pulse"><i class="fas fa-clock"></i></div>
+                <div class="cert-logo"><i class="fas fa-server"></i></div>
+                <h3>Cisco CCNA</h3>
+                <p class="cert-org">Cisco</p>
+                <p class="cert-desc">Advanced routing, switching, and IP services. Currently pursuing final examination.</p>
+                <div class="progress-mini"><div class="fill" style="width: 75%"></div></div>
+                <span class="tag progress">In Progress</span>
+            </div>
+
+            <div class="glass-card cert-card in-progress hidden-bottom">
+                <div class="cert-badge pulse"><i class="fas fa-clock"></i></div>
+                <div class="cert-logo"><i class="fab fa-linux"></i></div>
+                <h3>Red Hat EX200</h3>
+                <p class="cert-org">Red Hat</p>
+                <p class="cert-desc">Red Hat Certified System Administrator (RHCSA). Focused on Linux command line and administration.</p>
+                <div class="progress-mini"><div class="fill" style="width: 60%"></div></div>
+                <span class="tag progress">In Progress</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="section">
+    <div class="container">
+        <div class="section-header hidden-bottom">
+            <h2>Academic Background</h2>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item hidden-bottom">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content glass-card">
+                    <span class="date">Master of Science</span>
+                    <h3>Project Management</h3>
+                    <h4>University of Northumbria Newcastle (London Campus)</h4>
+                    <p>Specialized in strategic project delivery, risk analysis, and agile frameworks within complex engineering environments.</p>
                 </div>
-                <div class="edu-card">
-                    <div class="edu-year">2014 - 2019</div>
-                    <div class="edu-content">
-                        <h3>Bachelor of Science (BSc) in Agricultural Engineering</h3>
-                        <h4>University of Nigeria, Nsukka</h4>
-                        <p>Comprehensive education in agricultural systems, machinery design, irrigation systems, and sustainable farming technologies. Developed strong analytical and problem-solving skills.</p>
-                        <div class="edu-tags">
-                            <span>Engineering Design</span>
-                            <span>Sustainability</span>
-                            <span>Systems Analysis</span>
-                            <span>Research</span>
-                        </div>
-                    </div>
+            </div>
+
+            <div class="timeline-item hidden-bottom">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content glass-card">
+                    <span class="date">Bachelor of Science</span>
+                    <h3>Agricultural Engineering</h3>
+                    <h4>University of Nigeria, Nsukka</h4>
+                    <p>Rigorous training in engineering principles, systems design, and technical problem solving.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>I'm always open to discussing new opportunities, collaborations, or just having a chat about technology and innovation.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>your.email@example.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+123 456 7890</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>London, United Kingdom</span>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    </div>
+<!-- Contact Section -->
+<section id="contact" class="section">
+    <div class="container">
+        <div class="contact-wrapper glass-card hidden-bottom">
+            <div class="contact-info">
+                <h2>Let's Work Together</h2>
+                <p>Currently open to roles in IT Support, Network Administration, and Junior Project Management.</p>
+                <div class="contact-details">
+                    <div class="item"><i class="fas fa-envelope"></i> <span>your.email@example.com</span></div>
+                    <div class="item"><i class="fas fa-map-marker-alt"></i> <span>London, UK</span></div>
                 </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
-            <p>Built with passion and precision.</p>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" required placeholder=" ">
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required placeholder=" ">
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" rows="4" required placeholder=" "></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button type="submit" class="btn btn-primary full-width">
+                    Send Message <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <script src="script.js"></script>
+<footer>
+    <!-- The script will replace whatever is inside this <p> tag -->
+    <p>&copy; 2023 Onyeriri. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
