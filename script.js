@@ -1,5 +1,3 @@
-// script.js
-
 document.addEventListener('DOMContentLoaded', () => {
 
     // 1. Mobile Menu Toggle
@@ -13,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
             navLinks.classList.toggle("active");
         });
 
-        // Close menu when a link is clicked
         navItems.forEach(item => {
             item.addEventListener("click", () => {
                 hamburger.classList.remove("active");
@@ -24,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 2. Scroll Animations (Intersection Observer)
     const observerOptions = {
-        threshold: 0.15, // Trigger when 15% of the element is visible
+        threshold: 0.15,
         rootMargin: "0px 0px -50px 0px"
     };
 
@@ -32,8 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("show");
-                // Optional: Stop observing once shown to prevent re-animating
-                // observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
@@ -41,22 +36,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const hiddenElements = document.querySelectorAll(".hidden-left, .hidden-right, .hidden-bottom");
     hiddenElements.forEach((el) => observer.observe(el));
 
-    // 3. Navbar Blur & Shadow Effect on Scroll
+    // 3. Navbar Effect on Scroll
     const navbar = document.querySelector(".navbar");
 
     window.addEventListener("scroll", () => {
         if (window.scrollY > 50) {
             navbar.style.background = "rgba(15, 23, 42, 0.95)";
             navbar.style.boxShadow = "0 4px 20px rgba(0,0,0,0.4)";
-            navbar.style.padding = "1rem 0"; // Shrink slightly
+            navbar.style.padding = "1rem 0";
         } else {
             navbar.style.background = "rgba(15, 23, 42, 0.8)";
             navbar.style.boxShadow = "none";
-            navbar.style.padding = "1.5rem 0"; // Original size
+            navbar.style.padding = "1.5rem 0";
         }
     });
 
-    // 4. Smooth Scroll for Anchor Links (Fallback for older browsers)
+    // 4. Smooth Scroll with Offset
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -65,7 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
-                // Account for fixed navbar height
                 const headerOffset = 80;
                 const elementPosition = targetElement.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
@@ -78,14 +72,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 5. Dynamic Year Update for Footer
-    const footerText = document.querySelector('footer p');
-    if (footerText) {
+    // 5. ✅ FIXED: Dynamic Year Update
+    // We look specifically for the <p> tag inside <footer>
+    const footerParagraph = document.querySelector("footer p");
+
+    if (footerParagraph) {
         const currentYear = new Date().getFullYear();
-        footerText.innerHTML = `&copy; ${currentYear} Onyeriri. All Rights Reserved.`;
+        // This replaces the entire text content dynamically
+        footerParagraph.innerHTML = `&copy; ${currentYear} Onyeriri. All Rights Reserved.`;
+        console.log("Footer year updated to: " + currentYear); // Check console to verify
+    } else {
+        console.error("Footer paragraph not found. Ensure you have <footer><p>...</p></footer> in your HTML.");
     }
 
-    // 6. Active Link Highlighter based on Scroll Position
+    // 6. Active Link Highlighter
     const sections = document.querySelectorAll('section');
 
     window.addEventListener('scroll', () => {
@@ -93,14 +93,13 @@ document.addEventListener('DOMContentLoaded', () => {
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
-            // Offset by 150px to trigger highlight before the section hits exact top
             if (pageYOffset >= (sectionTop - 150)) {
                 current = section.getAttribute('id');
             }
         });
 
         navItems.forEach(li => {
-            li.classList.remove('active-link'); // You can add CSS for .active-link
+            li.classList.remove('active-link');
             if (li.getAttribute('href').includes(current)) {
                 li.classList.add('active-link');
             }
